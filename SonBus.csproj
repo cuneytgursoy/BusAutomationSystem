@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C5223DD-7C94-44E3-9508-46F10407EA0D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SonBus</RootNamespace>
+    <AssemblyName>SonBus</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\home_1.jpg" />
+    <Content Include="images\home_2.jpg" />
+    <Content Include="images\home_3.jpg" />
+    <Content Include="images\icons\facebook.png" />
+    <Content Include="images\icons\linkedin.png" />
+    <Content Include="images\icons\news.png" />
+    <Content Include="images\icons\testimonial.jpg" />
+    <Content Include="images\icons\twitter.png" />
+    <Content Include="images\icons\work.png" />
+    <Content Include="images\loader_white.gif" />
+    <Content Include="images\side_back.png" />
+    <Content Include="images\side_base.png" />
+    <Content Include="images\side_top.png" />
+    <Content Include="js\image_slide.js" />
+    <Content Include="js\jquery.galleriffic.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.opacityrollover.js" />
+    <Content Include="kayit.aspx" />
+    <Content Include="kayit1.aspx" />
+    <Content Include="nerden.aspx" />
+    <Content Include="outwork.aspx" />
+    <Content Include="projects.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="setting.aspx" />
+    <Content Include="seyehat.aspx" />
+    <Content Include="testimonials.aspx" />
+    <Content Include="tickets.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kayit.aspx.cs">
+      <DependentUpon>kayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kayit.aspx.designer.cs">
+      <DependentUpon>kayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kayit1.aspx.cs">
+      <DependentUpon>kayit1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kayit1.aspx.designer.cs">
+      <DependentUpon>kayit1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nerden.aspx.cs">
+      <DependentUpon>nerden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nerden.aspx.designer.cs">
+      <DependentUpon>nerden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="outwork.aspx.cs">
+      <DependentUpon>outwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="outwork.aspx.designer.cs">
+      <DependentUpon>outwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="projects.aspx.cs">
+      <DependentUpon>projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projects.aspx.designer.cs">
+      <DependentUpon>projects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="setting.aspx.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setting.aspx.designer.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="seyehat.aspx.cs">
+      <DependentUpon>seyehat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="seyehat.aspx.designer.cs">
+      <DependentUpon>seyehat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testimonials.aspx.cs">
+      <DependentUpon>testimonials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testimonials.aspx.designer.cs">
+      <DependentUpon>testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tickets.aspx.cs">
+      <DependentUpon>tickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tickets.aspx.designer.cs">
+      <DependentUpon>tickets.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer1\BusinessLayer1.csproj">
+      <Project>{7D67969D-F77E-42EC-B288-21BBA111F992}</Project>
+      <Name>BusinessLayer1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer1\DataLayer1.csproj">
+      <Project>{E189395B-5DB8-437C-8759-F30955502DFF}</Project>
+      <Name>DataLayer1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49525</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
